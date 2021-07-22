@@ -1,0 +1,31 @@
+#navbar-iframe{display:none;height: 0;}
+body{background:#EAE7DC;background-attachment:fixed;font:13px trebuchet ms; color:#000;letter-spacing:1px;cursor:url(http://3.bp.blogspot.com/-ShDwOrpkuaM/ThlOjvPq9gI/AAAAAAAABKM/RALNlWJUBiY/s1600/tinyarrowgrey.png),auto;}
+a:link,a:visited{color:#333;text-decoration:none;padding:0px;cursor:url(http://3.bp.blogspot.com/-ShDwOrpkuaM/ThlOjvPq9gI/AAAAAAAABKM/RALNlWJUBiY/s1600/tinyarrowgrey.png),auto;}
+.title {font:11px trebuchet ms; text-transform:uppercase; font-weight:bold; color:#8E8D8A; background:#ded1bf; padding:5px; margin:0 0 7 0;}
+.titla {font:11px trebuchet ms; text-transform:uppercase; font-weight:bold; color:#8E8D8A; background:#ded1bf; padding:5px; margin:0 0 7 0; text-align:right}
+.title2 {font:11px calibri; color:#000;letter-spacing:1px;}
+a.pager {font:8px trebuchet ms; text-transform:uppercase; font-weight:bold; width:50px; text-align:center; display:inline-block; background:black; padding:3px; color:white; margin:0 0 15 0;}
+.blogger-labels{}
+blockquote{font:11px corbel; padding:10px; border:1px dotted #343434;}
+.sidebar{width:220px;font: 9px georgia; font-style:italic; color:#000; text-align:center;background:#fff; padding:10px;margin-bottom:10px; box-shadow:1px 1px 2px #999;}
+.content{width:590px; font:11 georgia; color:#000; text-align:justify; background:#fff; padding:10px; margin-bottom:10px; box-shadow:1px 1px 2px #999;}
+@font-face {
+    font-family: 'bodoniflfbold';
+    src: url('bodoniflf-bold-webfont.woff2') format('woff2'),
+         url('bodoniflf-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+webkit-transition-duration:0.1s;-moz-transition-duration:0.1s;}
+.gambar {860px;}
+.kedudukan {width:860px;}
+#tulisan{background:#fff;position:absolute;margin-top:-35px;padding:3px;-webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease;width:832px;text-align:center;color:#ded1bf;letter-spacing:1px;-webkit-transition:1200ms; padding:12 10 12 10; border:4px solid #fff; box-shadow:1px 1px 2px #999;}
+.intro {text-align:justify;letter-spacing:1px;text-transform:none;}
+.howon a {display:inline-block; width:130px; background:#fff; color:#8E8D8A; text-align:center; font:11px bodoniflfbold; text-transform:uppercase; padding:5 0 3 0; -webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease; }
+.howon a:hover {background:#ded1bf; color:black;}                        
+::-webkit-scrollbar {width:8px;height:6px;}
+::-webkit-scrollbar-track-piece  {background:white;}
+::-webkit-scrollbar-thumb:vertical, ::-webkit-scrollbar-thumb:horizontal{background:#000;}
+.affi a { display:inline-block; width:100px; padding:5px; border:1px solid #000; margin:4px; font:10px ms gothic; text-transform:uppercase; -webkit-transition: all 0.4s ease-in-out;-moz-transition: all 0.4s ease-in-out;-o-transition: all 0.4s ease-in-out;transition: all 0.4s ease-in-out;}
+.affi a:hover {box-shadow: inset 60px 0px 0px 0px #000, inset -60px 0px 0px 0px #000; color:white; }
