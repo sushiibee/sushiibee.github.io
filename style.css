@@ -135,7 +135,8 @@ div.s {
 	color: #716B65; 
 	font-family: 'Baloo Da 2', cursive; 
 	font-size: 13px; 
-	text-align: justify; 
+	text-align: justify;
+	text-shadow: -2px 2px #716B65;
 }
 
 #subtitle {
