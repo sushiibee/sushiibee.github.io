@@ -139,6 +139,31 @@ div.s {
 	text-shadow: -2px 2px #716B65;
 }
 
+#bee f { 
+	color: #716B65; 
+	font-family: 'Baloo Da 2', cursive; 
+	font-size: 13px; 
+	text-align: justify;
+	text-shadow: -1px 1px #716B65;
+}
+
+div.g { 
+	color: #848687; 
+	font-family: 'Baloo Da 2', cursive; 
+	font-style: italic;
+	font-size: 13px; 
+	text-align: justify;
+	text-align-last: center;
+}
+
+div.j { 
+	color: #848687; 
+	font-family: 'Baloo Da 2', cursive; 
+	font-style: italic;
+	font-size: 13px; 
+	text-align: center; 
+}
+
 #subtitle {
     
     font-family: helvetica neue;
