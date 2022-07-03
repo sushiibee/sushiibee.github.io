@@ -12,32 +12,32 @@ body {
 	
 } 
 
+
+
 #card {
 		background-color: #232425; 
-		height: auto;
-		width: 370px;
+		height: 550px;
+		width: 420px;
 		margin: 12vh auto;
+		margin-bottom: 10px;
 		border-radius: 25px; 
 		padding-bottom: 1px;
 		box-shadow: 2px 2px 5px #F3DECD;
+
 }
 
-::-webkit-scrollbar-thumb:vertical {
-	background-color: color:#F2D8C7;
-	height: auto; 
-}
 
-::-webkit-scrollbar-thumb:horizontal {
-	background-color: color:#F2D8C7;
-	height: auto; 
-}
+#card2 {
+		background-color: #232425; 
+		height: 420px;
+		width: 490px;
+		margin: 12vh auto;
+		margin-bottom: 10px;
+		border-radius: 25px; 
+		padding-bottom: 1px;
+		box-shadow: 2px 2px 5px #F3DECD;
 
-::-webkit-scrollbar {
-	height: 2px; 
-	width: 2px; 
-	background color: color:#F6E1CE; 
 }
-
 
 
 
@@ -98,23 +98,43 @@ h3 {
 
 #bio p {
 	color: #C9CED1; 
-	font-family: 'Didact Gothic', sans-serif;
+	font-variant: small-caps;
 	font-size: 13px; 
 	text-align: justify; 
 	text-align-last: center;
 }
 
+div.s {
+	color: #3D3936; 
+	width: 330px;
+	font-variant: small-caps;
+	text-align: right;
+	font-size: 13px;
+}
+
 #bee {
 	display: block; 
-	margin: 30px auto; 
-	width: 280px; 
-	height: auto; 
+	height: 240px;
+	width: 390px;
+	margin-top: 12px;
+	padding-left: 15px;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	position: absolute; 
 }
 
 #bee p { 
 	color: #c9ced1; 
 	font-family: 'Baloo Da 2', cursive; 
-	font-size: 14px; 
+	font-size: 13px; 
+	text-align: justify; 
+}
+
+#bee e { 
+	color: #716B65; 
+	font-family: 'Baloo Da 2', cursive; 
+	font-size: 13px; 
 	text-align: justify; 
 }
 
@@ -126,7 +146,10 @@ h3 {
     color: {color:#b7b7b7};
 }
 
-
+div#scrollable {
+	overflow-y: scroll;
+	height: 100%; 
+}
 
 
 
@@ -215,7 +238,7 @@ section {
   color: #fff;
   z-index: 2;
   letter-spacing: 10px;
-  padding-left: 17px;
+  padding-left: 45px;
 
   /* Bright things in dark environments usually cast that light, giving off a glow */
   filter: drop-shadow(0 1px 3px);
