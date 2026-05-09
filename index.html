@@ -1,80 +1,335 @@
-<html>
-<body>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<base target='_blank'/>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noctis Vale — Archive of Signal Damage</title>
+  <meta
+    name="description"
+    content="An immersive glitchcore portfolio site for Noctis Vale, sensory archivist and interface composer."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="scanlines"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet"> 
-	
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@200&display=swap" rel="stylesheet">
-  </head>
-<title>•••---•••</title>
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="Noctis Vale home">
+      <img src="assets/logo-noctis-vale.svg" alt="Noctis Vale logo" class="brand-logo" />
+    </a>
 
+    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navPanel">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="sr-only">Toggle menu</span>
+    </button>
 
+    <nav class="nav" id="navPanel">
+      <a href="#manifesto">Manifesto</a>
+      <a href="#works">Works</a>
+      <a href="#ledger">Ledger</a>
+      <a href="#signal">Signal</a>
+    </nav>
+  </header>
 
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Archive / Signal / Interference</p>
+          <h1 class="hero-title">
+            <span class="glitch" data-text="Noctis">Noctis</span>
+            <span>Vale</span>
+          </h1>
+          <p class="hero-text">
+            I build places for feelings that refuse to survive in ordinary language.
+            Interactive environments, visual systems, and sensory interfaces for memory,
+            desire, distortion, and controlled ruin.
+          </p>
 
+          <div class="hero-actions">
+            <a class="button button-primary" href="#works">Enter the archive</a>
+            <a class="button button-secondary" href="#signal">Send a signal</a>
+          </div>
+        </div>
 
-<div id="card">
-<div class="subtitle">
-<h3>PARADOX</h3>
-    <h2 class="hero glitch layers" data-text="paint me a daydream"><span>paint me a daydream</span></h2>
-  
-	
-	
-	<div class="container brackets">
-	<a onClick="document.getElementById('pop').innerHTML=document.getElementById('tab').innerHTML">home</a>
-<a onClick="document.getElementById('pop').innerHTML=document.getElementById('testing').innerHTML">mid</a>
-<a onClick="document.getElementById('pop').innerHTML=document.getElementById('here').innerHTML">break</a>
-	</div>
-	<div class="image-crop">
-		<img id="avatar" src="https://i.ibb.co/9pqgKJ6/2990six.gif"></img>
-	</div></div>
-	<div id="pop"><div id="bio">
-		<p><i><font color="#716B65">you are a rewrite of a dream; i am a mirage, dear heart, and you cannot chase it.</font></i> <p>you are a rewrite of a dream—</p></p>
-		</br></br></br></br></br></br></br>
-		<div class="s">don't turn around.</div>
-		</div>
-</div>
-	
-	<div id="tab" style="display:none">
-		<div id="bio">
-			<p><i><font color="#716B65">you are a rewrite of a dream; i am a mirage, dear heart, and you cannot chase it.</font></i> <p>you are a rewrite of a dream—</p>
-			</br></br></br></br></br></br></br>
-		<div class="s">don't turn around.</div>
-		</div>
-	</div>
-		
-	<div id="testing" style="display:none">
-		<div id="bee">
-			<p>You're so mad at him all over again, and just like before, you have no justifiable reason to be. 
-			<p>You're lowercase, he's capitalized, and that's why it's so complicated. Humans are so malleable—you can create a new identity for yourself at any time. 
-			<p>But if you already have a fundamental personality, a fundamental <b>You</b>,
-			<p>singular, 
-			</br>Capitalized, 
-			<p>then everyone else has to miss out on something potentially great. 
-			<p>And you are...
-			<e></br>And you are...</e>
-			<p>Angry. Or frustrated. Disappointed, in who you don't know, yourself or him or them, they, the ever-vague and elusive fork in the road that tips the blame right over the counter with eyes wide shut. 
-		</div>
-	</div>
+        <aside class="hero-panel reveal">
+          <div class="panel-label">Current system state</div>
+          <ul class="system-list">
+            <li><span>Role</span><strong>Sensory archivist / interface composer</strong></li>
+            <li><span>Mode</span><strong>Glitch opera / brutal elegance</strong></li>
+            <li><span>Methods</span><strong>Motion, type, sound, refusal</strong></li>
+            <li><span>Failure state</span><strong>Making it too honest</strong></li>
+          </ul>
+        </aside>
+      </div>
 
-<div id="here" style="display:none">
-		<div id="bee">
-			<p>You manage to make everythiung about you, even while pretending to do otherwise. You're beyond the point of where your actions only affect yourself; a destination you alone chose to lead.
-			<p>And how indebted are you, to this art of losing, that you would feel your crown threatened on the precipice of gain? Because it requires loss—
-			<p>So adamant you remain in caging ghosts that no longer remain corporeal enough to grab; 
-			</br>you've begun to create your own, crafted and bound by your own chains. 
-			<p>A willful ignorance.
-			<p align="center"><f>c l o s e  y o u r  e y e s</f></p>
-		
-		</div>
-</div>
-</body></html>
+      <div class="hero-orbit" aria-hidden="true">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="orb orb-c"></div>
+      </div>
+
+      <div class="hero-footer reveal">
+        <div class="ticker">
+          <span>memory bleed</span>
+          <span>signal fracture</span>
+          <span>tender violence</span>
+          <span>color as evidence</span>
+          <span>music as architecture</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="manifesto" class="section section-tight">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / Manifesto</p>
+          <h2>I translate interference.</h2>
+        </div>
+
+        <div class="manifesto-grid">
+          <article class="manifesto-card reveal">
+            <img src="assets/sigil-archive.svg" alt="" class="sigil" />
+            <p>
+              I do not make clean objects. I make convincing hauntings. My work begins
+              where ordinary presentation fails—when memory stutters, when color behaves
+              like evidence, when sound becomes structure, when love arrives damaged and
+              still insists on being seen.
+            </p>
+          </article>
+
+          <article class="manifesto-card manifesto-card-accent reveal">
+            <img src="assets/sigil-signal.svg" alt="" class="sigil" />
+            <p>
+              Glitch is not ornament. It is symptom, language, pressure, and pulse.
+              Every fracture is placed with intent. Every silence is part of the score.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / Selected transmissions</p>
+          <h2>Built as emotional systems.</h2>
+          <p class="section-intro">
+            These are not static projects. They are environments that reward patience,
+            proximity, and a tolerance for instability.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article
+            class="project-card reveal"
+            data-title="Ruin Protocol"
+            data-type="Archive / Interface"
+            data-copy="An interactive identity archive built around split-state navigation, reactive text fragmentation, and memory-index transitions. Designed for exhibition contexts where selfhood appears unstable but never fully collapses."
+          >
+            <img src="assets/icon-eye.svg" alt="" class="project-icon" />
+            <p class="project-type">Archive / Interface</p>
+            <h3>Ruin Protocol</h3>
+            <p>
+              Identity storage under pressure. Distortion-driven navigation and elegant
+              collapse states.
+            </p>
+            <button class="text-link project-open">Open file</button>
+          </article>
+
+          <article
+            class="project-card reveal"
+            data-title="Velvet Static"
+            data-type="Fashion / Motion"
+            data-copy="A fashion-forward microsite where garments trigger ambient motion fields, chromatic drift, and responsive atmospheric overlays. Built to feel expensive, intimate, and mildly dangerous."
+          >
+            <img src="assets/icon-fragment.svg" alt="" class="project-icon" />
+            <p class="project-type">Fashion / Motion</p>
+            <h3>Velvet Static</h3>
+            <p>
+              Luxury glitch choreography for synthetic couture, body language, and shimmer
+              under stress.
+            </p>
+            <button class="text-link project-open">Open file</button>
+          </article>
+
+          <article
+            class="project-card reveal"
+            data-title="Chapel of Signal Loss"
+            data-type="Exhibition / Narrative"
+            data-copy="A ritualized exhibition site built from liturgical pacing, corrupted loops, layered subtitles, and spatial transitions that mimic devotion under compression. The viewer never fully stands outside the work."
+          >
+            <img src="assets/icon-audio.svg" alt="" class="project-icon" />
+            <p class="project-type">Exhibition / Narrative</p>
+            <h3>Chapel of Signal Loss</h3>
+            <p>
+              Where devotion flickers, subtitles fail, and reverence learns to distort.
+            </p>
+            <button class="text-link project-open">Open file</button>
+          </article>
+
+          <article
+            class="project-card reveal"
+            data-title="Red Shift / Soft Body"
+            data-type="Intimacy / Experiment"
+            data-copy="A relationship-driven installation site using pulse states, cursor proximity, refusal interactions, and delayed revelation. It is built for the space between wanting contact and surviving it."
+          >
+            <img src="assets/icon-fragment.svg" alt="" class="project-icon" />
+            <p class="project-type">Intimacy / Experiment</p>
+            <h3>Red Shift / Soft Body</h3>
+            <p>
+              For the moment where tenderness and danger become indistinguishable.
+            </p>
+            <button class="text-link project-open">Open file</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-split">
+      <div class="section-shell split-grid">
+        <div class="split-left reveal">
+          <p class="eyebrow">03 / Method</p>
+          <h2>Sensory engineering.</h2>
+          <p class="section-intro">
+            My process begins with atmosphere before layout, pulse before hierarchy, and
+            emotional weather before interface rules.
+          </p>
+          <img src="assets/sigil-rupture.svg" alt="" class="sigil sigil-large" />
+        </div>
+
+        <div class="split-right reveal">
+          <div class="stack-card">
+            <div class="stack-item">
+              <span>01</span>
+              <p>Map the emotion before the feature.</p>
+            </div>
+            <div class="stack-item">
+              <span>02</span>
+              <p>Design typography as voice, not decoration.</p>
+            </div>
+            <div class="stack-item">
+              <span>03</span>
+              <p>Use motion to destabilize, reveal, or withhold.</p>
+            </div>
+            <div class="stack-item">
+              <span>04</span>
+              <p>Make atmosphere carry as much meaning as text.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ledger" class="section">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 / Field notes</p>
+          <h2>Ledger from the body.</h2>
+          <p class="section-intro">
+            Working notes, technical fragments, and warnings I keep because forgetting is
+            expensive.
+          </p>
+        </div>
+
+        <div class="ledger-grid">
+          <article class="ledger-entry reveal">
+            <span class="ledger-index">01</span>
+            <p>Certain rooms arrive before I enter them.</p>
+          </article>
+          <article class="ledger-entry reveal">
+            <span class="ledger-index">02</span>
+            <p>White noise is only honest when it almost hurts.</p>
+          </article>
+          <article class="ledger-entry reveal">
+            <span class="ledger-index">03</span>
+            <p>Music does not accompany memory. It edits it.</p>
+          </article>
+          <article class="ledger-entry reveal">
+            <span class="ledger-index">04</span>
+            <p>Some people distort the air around them and call it charisma.</p>
+          </article>
+          <article class="ledger-entry reveal">
+            <span class="ledger-index">05</span>
+            <p>There are colors that only appear when someone is about to leave.</p>
+          </article>
+          <article class="ledger-entry reveal">
+            <span class="ledger-index">06</span>
+            <p>Beauty is not safe. I trust it more than I trust safety.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="signal" class="section section-tight">
+      <div class="section-shell">
+        <div class="contact-grid">
+          <div class="contact-copy reveal">
+            <p class="eyebrow">05 / Signal</p>
+            <h2>Tell me what you need them to feel.</h2>
+            <p class="section-intro">
+              For commissions, exhibitions, sonic visual systems, digital fashion, and
+              websites that should behave like art instead of advertising.
+            </p>
+          </div>
+
+          <form class="contact-form reveal">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+
+            <label>
+              <span>Contact</span>
+              <input type="email" name="email" placeholder="email@domain.com" />
+            </label>
+
+            <label>
+              <span>Project intent</span>
+              <input
+                type="text"
+                name="intent"
+                placeholder="What are you trying to make them feel?"
+              />
+            </label>
+
+            <label>
+              <span>Scope</span>
+              <textarea
+                name="message"
+                placeholder="Timeline, budget, references, obsessions, constraints."
+              ></textarea>
+            </label>
+
+            <button type="submit" class="button button-primary">Transmit</button>
+            <p class="form-note">Clarity helps. So does nerve.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close project modal">×</button>
+      <p class="modal-type" id="modalType"></p>
+      <h3 id="modalTitle"></h3>
+      <p id="modalCopy"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
