@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ꜱɪɢɴᴀʟᵃʳᶜʰⁱᵛᵉᴅᴀᴍᴀɢᴇ v3 — Boot Damage Menu</title>
+  <meta name="description" content="Corrupted Windows 98-inspired desktop with boot device selection, broken screensavers, multiplying dialogs, and glitch command shell." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="boot-screen" id="bootScreen">
+    <div class="boot-menu-shell" id="bootMenuShell">
+      <div class="boot-header">Windows 98 Startup Menu / Corrupted Boot Device Selection</div>
+      <div class="boot-devices">
+        <button class="boot-option active" data-boot="primary">1. Internal HDD [signal damage]</button>
+        <button class="boot-option" data-boot="archive">2. Archive Recovery Disk [damaged]</button>
+        <button class="boot-option" data-boot="ghost">3. Ghost Floppy Device [unsafe]</button>
+        <button class="boot-option" data-boot="network">4. PXE Memory Leak Boot [unstable]</button>
+      </div>
+      <p class="boot-tip">Use mouse or arrow keys. Press Enter to boot selected device.</p>
+      <div class="boot-bar"><span id="bootBar"></span></div>
+      <div class="boot-actions">
+        <button class="win-btn" id="bootNow">Boot selected device</button>
+        <button class="win-btn" id="enableSound">Enable sound + boot</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="crt-overlay"></div>
+  <div class="scanline"></div>
+  <div class="noise-burst" id="noiseBurst"></div>
+  <div class="chromatic-aberration"></div>
+
+  <audio id="bootAudio" preload="auto"><source src="assets/boot-chime.wav" type="audio/wav" /></audio>
+  <audio id="errorAudio" preload="auto"><source src="assets/error-buzz.wav" type="audio/wav" /></audio>
+
+  <main class="desktop" id="desktop">
+    <aside class="desktop-icons">
+      <button class="desktop-icon" data-window="aboutWindow"><img src="assets/icon-computer.svg" alt="" /><span>My Computer</span></button>
+      <button class="desktop-icon" data-window="worksWindow"><img src="assets/icon-folder.svg" alt="" /><span>Works</span></button>
+      <button class="desktop-icon" data-window="notesWindow"><img src="assets/icon-notes.svg" alt="" /><span>Field Notes.txt</span></button>
+      <button class="desktop-icon" data-window="mediaWindow"><img src="assets/icon-audio.svg" alt="" /><span>Signal Player</span></button>
+      <button class="desktop-icon" data-window="screensaverWindow"><img src="assets/icon-image.svg" alt="" /><span>Screensavers</span></button>
+      <button class="desktop-icon" data-window="contactWindow"><img src="assets/icon-mail.svg" alt="" /><span>Transmit</span></button>
+      <button class="desktop-icon" data-window="trashWindow"><img src="assets/icon-trash.svg" alt="" /><span>Recycle Bin</span></button>
+      <button class="desktop-icon" data-window="terminalWindow"><img src="assets/icon-terminal.svg" alt="" /><span>C:\COMMAND</span></button>
+    </aside>
+
+    <section class="windows-layer">
+      <article class="window active" id="aboutWindow" style="top: 54px; left: 176px; width: 560px;" data-title="System Properties">
+        <div class="title-bar drag-handle"><div class="title-bar-text">System Properties</div><div class="title-bar-controls"><button class="minimize-btn" aria-label="Minimize"></button><button class="maximize-btn" aria-label="Maximize"></button><button class="close-btn" aria-label="Close"></button></div></div>
+        <div class="window-body">
+          <div class="system-header"><h1>ꜱɪɢɴᴀʟᵃʳᶜʰⁱᵛᵉᴅᴀᴍᴀɢᴇ</h1><p>Operator alias: signal damage / critical corruption build / startup device state unknown</p></div>
+          <div class="inset-panel status-leds">
+            <div><span class="led live"></span>Signal integrity: degraded</div>
+            <div><span class="led warn"></span>Archive pressure: rising</div>
+            <div><span class="led dead"></span>Recovery confidence: false</div>
+          </div>
+          <div class="status-grid">
+            <div class="bevel-card"><h2>Profile</h2><p>signal damage builds atmospheric interfaces shaped by memory failure, haunted media, and deliberate instability.</p></div>
+            <div class="bevel-card"><h2>Current Processes</h2><ul class="compact-list"><li>Boot-device uncertainty</li><li>Phantom window activity</li><li>Command shell drift</li><li>Screensaver corruption</li></ul></div>
+            <div class="bevel-card"><h2>System Mood</h2><div class="meter-wrap"><span id="moodMeter"></span></div><p id="moodLabel">Mood status: softly panicking</p></div>
+            <div class="bevel-card"><h2>Recent Events</h2><div class="event-log" id="eventLog"><p>[09:19] signal damage shell resumed</p><p>[09:20] boot device mismatch tolerated</p><p>[09:21] idle process requesting screensaver</p></div></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="window" id="worksWindow" style="top: 118px; left: 430px; width: 540px;" data-title="Works Explorer">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Works Explorer</div><div class="title-bar-controls"><button class="minimize-btn"></button><button class="maximize-btn"></button><button class="close-btn"></button></div></div>
+        <div class="window-toolbar"><button class="win-btn">Back</button><button class="win-btn">Forward</button><button class="win-btn">Refresh</button><button class="win-btn" id="spawnError">Open damaged file</button></div>
+        <div class="window-body">
+          <table class="file-table"><thead><tr><th>Name</th><th>Type</th><th>Status</th></tr></thead><tbody>
+          <tr class="project-row" data-name="signal damage.exe" data-copy="Identity archive under pressure. Fragmented navigation and collapse states."><td>signal_damage.exe</td><td>Interface archive</td><td>Damaged</td></tr>
+          <tr class="project-row" data-name="Velvet Static" data-copy="Luxury fashion microsite with chromatic drift and dangerous softness."><td>VelvetStatic.mov</td><td>Motion garment system</td><td>Recoverable</td></tr>
+          <tr class="project-row" data-name="Ghost Driver" data-copy="A driver package that installs atmosphere, flicker, and dread directly into the shell."><td>ghost_drv.vxd</td><td>System extension</td><td>Unknown</td></tr>
+          </tbody></table>
+        </div>
+      </article>
+
+      <article class="window" id="notesWindow" style="top: 176px; left: 118px; width: 500px;" data-title="Field Notes.txt">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Field Notes.txt - Notepad</div><div class="title-bar-controls"><button class="minimize-btn"></button><button class="maximize-btn"></button><button class="close-btn"></button></div></div>
+        <div class="window-body notepad"><p>Boot menus are only prayers with highlighted options.</p><p>Idle machines dream in screensavers.</p><p>A dialog box can panic like an animal if you let it multiply.</p><p>The shell should feel alive enough to distrust.</p></div>
+      </article>
+
+      <article class="window" id="mediaWindow" style="top: 210px; left: 632px; width: 360px;" data-title="Signal Player">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Signal Player</div><div class="title-bar-controls"><button class="minimize-btn"></button><button class="maximize-btn"></button><button class="close-btn"></button></div></div>
+        <div class="window-body"><div class="player-box"><div class="player-screen"><p>NOW DECODING:</p><strong>boot_sector_lament.wav</strong><div class="visualizer"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div><div class="player-controls"><button class="win-btn" id="triggerGlitch">Glitch</button><button class="win-btn" id="triggerBsod">Crash</button><button class="win-btn" id="spawnPopup">Multiply errors</button></div></div></div>
+      </article>
+
+      <article class="window" id="screensaverWindow" style="top: 250px; left: 670px; width: 390px;" data-title="Display Properties - Screensavers">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Display Properties - Screensavers</div><div class="title-bar-controls"><button class="minimize-btn"></button><button class="maximize-btn"></button><button class="close-btn"></button></div></div>
+        <div class="window-body">
+          <p>Select a corrupted screensaver:</p>
+          <div class="screensaver-list">
+            <button class="win-btn saver-btn" data-saver="stars">Starfield Rupture</button>
+            <button class="win-btn saver-btn" data-saver="dvd">Bouncing Warning Box</button>
+            <button class="win-btn saver-btn" data-saver="pipes">Broken Pipes of Memory</button>
+          </div>
+          <div class="preview-box">
+            <div class="screensaver-preview active" id="preview-stars"><div class="starfield" id="starfield"></div></div>
+            <div class="screensaver-preview" id="preview-dvd"><div class="dvd-box" id="dvdBox">WARNING</div></div>
+            <div class="screensaver-preview" id="preview-pipes"><div class="pipes-grid" id="pipesGrid"></div></div>
+          </div>
+          <div class="player-controls"><button class="win-btn" id="activateSaver">Preview Full Screen</button></div>
+        </div>
+      </article>
+
+      <article class="window" id="contactWindow" style="top: 86px; left: 774px; width: 372px;" data-title="Transmit Message">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Transmit Message</div><div class="title-bar-controls"><button class="minimize-btn"></button><button class="maximize-btn"></button><button class="close-btn"></button></div></div>
+        <div class="window-body"><form class="win-form"><label>Name</label><input type="text" placeholder="Your name" /><label>Contact</label><input type="email" placeholder="email@domain.com" /><label>Project intent</label><input type="text" placeholder="What should it feel like?" /><label>Message</label><textarea placeholder="Timeline, references, budget, obsessions."></textarea><div class="form-actions"><button type="submit" class="win-btn">Send</button><button type="reset" class="win-btn">Reset</button></div></form></div>
+      </article>
+
+      <article class="window" id="trashWindow" style="top: 292px; left: 880px; width: 272px;" data-title="Recycle Bin">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Recycle Bin</div><div class="title-bar-controls"><button class="maximize-btn"></button><button class="close-btn"></button></div></div>
+        <div class="window-body"><ul class="trash-list"><li>certainty.tmp</li><li>stable_version.old</li><li>NoctisVale.oldname</li><li>clean_shell.bak</li></ul></div>
+      </article>
+
+      <article class="window terminal-window" id="terminalWindow" style="top: 90px; left: 280px; width: 460px;" data-title="MS-DOS Prompt">
+        <div class="title-bar drag-handle"><div class="title-bar-text">MS-DOS Prompt</div><div class="title-bar-controls"><button class="minimize-btn"></button><button class="maximize-btn"></button><button class="close-btn"></button></div></div>
+        <div class="window-body terminal-shell" id="terminalShell"><div class="terminal-output" id="terminalOutput"><p>C:\WINDOWS&gt; echo operator = signal damage</p><p>operator confirmed.</p><p>C:\WINDOWS&gt; dir /a</p><p>ghost.exe &nbsp; 13,404 bytes</p><p>archive.log &nbsp; 9,801 bytes</p></div><form class="terminal-form" id="terminalForm"><label for="terminalInput">C:\WINDOWS&gt;</label><input id="terminalInput" autocomplete="off" spellcheck="false" placeholder="type help, boot, saver, glitch, crash" /></form></div>
+      </article>
+    </section>
+
+    <div class="dialog error-dialog active" id="errorDialog"><div class="title-bar drag-handle"><div class="title-bar-text">System Error</div><div class="title-bar-controls"><button class="dialog-close" aria-label="Close"></button></div></div><div class="window-body dialog-body"><p class="dialog-message">This program has performed an illegal emotional operation and will be shut down.</p><div class="dialog-actions"><button class="win-btn" id="dialogOk">OK</button><button class="win-btn" id="dialogDetails">Details</button></div></div></div>
+
+    <div class="bsod hidden" id="bsod"><div class="bsod-inner"><p>Windows</p><h2>An exception 0E has occurred at 0028:C0011E36 in VXD VMM(01) + 00010E36.</h2><p>The current application will be terminated.</p><p>* Press ESC to return to the desktop shell.</p><p class="bsod-small">SIGNAL_DAMAGE_FATAL: boot device / archive mismatch</p></div></div>
+
+    <div class="screensaver-overlay hidden" id="screensaverOverlay">
+      <button class="screensaver-close" id="closeSaver">ESC / close preview</button>
+      <div class="saver-stage saver-stars active" id="saver-stars"></div>
+      <div class="saver-stage saver-dvd" id="saver-dvd"><div class="dvd-box fullscreen" id="dvdBoxFull">WARNING</div></div>
+      <div class="saver-stage saver-pipes" id="saver-pipes"><div class="pipes-grid full" id="pipesGridFull"></div></div>
+    </div>
+
+    <nav class="taskbar"><div class="start-wrap"><button class="start-button" id="startButton">Start</button><div class="start-menu" id="startMenu"><div class="start-banner">SIGNAL DAMAGE</div><div class="start-items"><button data-window="aboutWindow">System Properties</button><button data-window="worksWindow">Works Explorer</button><button data-window="terminalWindow">MS-DOS Prompt</button><button data-window="screensaverWindow">Screensavers</button><button data-window="contactWindow">Transmit Message</button></div></div></div><div class="task-buttons" id="taskButtons"></div><div class="tray"><span>BOOT ERR</span><span id="clock"></span></div></nav>
+  </main>
+
+  <template id="taskButtonTemplate"><button class="task-btn"></button></template>
+  <script src="script.js" defer></script>
+</body>
+</html>
