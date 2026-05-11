@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noctis Vale OS — Corrupted Archive</title>
+  <meta name="description" content="A glitched Windows 98-inspired portfolio desktop for Noctis Vale." />
+  <meta name="theme-color" content="#008080" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="boot-screen" id="bootScreen" aria-hidden="true">
+    <div class="boot-panel">
+      <img src="assets/boot-logo.svg" alt="" class="boot-logo" />
+      <p>Noctis Vale OS is checking the archive for errors...</p>
+      <div class="boot-bar"><span id="bootBar"></span></div>
+      <p class="boot-sub">Warning: unrecoverable memory bleed detected.</p>
+      <button class="win-btn" id="enterDesktop">Enter desktop</button>
+    </div>
+  </div>
+
+  <div class="crt-overlay"></div>
+  <div class="scanline"></div>
+  <div class="glitch-flash" id="glitchFlash"></div>
+
+  <main class="desktop" id="desktop">
+    <aside class="desktop-icons">
+      <button class="desktop-icon" data-window="aboutWindow"><img src="assets/icon-computer.svg" alt="" /><span>My Computer</span></button>
+      <button class="desktop-icon" data-window="worksWindow"><img src="assets/icon-folder.svg" alt="" /><span>Works</span></button>
+      <button class="desktop-icon" data-window="notesWindow"><img src="assets/icon-notes.svg" alt="" /><span>Field Notes.txt</span></button>
+      <button class="desktop-icon" data-window="mediaWindow"><img src="assets/icon-audio.svg" alt="" /><span>Signal Player</span></button>
+      <button class="desktop-icon" data-window="galleryWindow"><img src="assets/icon-image.svg" alt="" /><span>Recovered Images</span></button>
+      <button class="desktop-icon" data-window="contactWindow"><img src="assets/icon-mail.svg" alt="" /><span>Transmit</span></button>
+      <button class="desktop-icon" data-window="trashWindow"><img src="assets/icon-trash.svg" alt="" /><span>Recycle Bin</span></button>
+    </aside>
+
+    <section class="windows-layer">
+      <article class="window active" id="aboutWindow" style="top: 56px; left: 180px; width: 540px;" data-title="System Properties">
+        <div class="title-bar drag-handle"><div class="title-bar-text">System Properties</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body">
+          <div class="system-header"><h1>Noctis Vale OS</h1><p>Archive build: 98.ERR / Signal damage edition</p></div>
+          <div class="inset-panel">
+            <p><strong>User:</strong> Noctis Vale</p>
+            <p><strong>Role:</strong> Sensory archivist / interface composer</p>
+            <p><strong>Status:</strong> Stable under distortion only</p>
+            <p><strong>Machine condition:</strong> Corrupted, operational, emotionally loaded</p>
+          </div>
+          <div class="status-grid">
+            <div class="bevel-card"><h2>Profile</h2><p>I build digital environments that feel like memory failure, emotional weather, and beauty under pressure.</p></div>
+            <div class="bevel-card"><h2>Methods</h2><p>UI systems, motion, typography, sound logic, atmosphere design, and intentional glitch.</p></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="window" id="worksWindow" style="top: 112px; left: 420px; width: 520px;" data-title="Works Explorer">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Works Explorer</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-toolbar"><button class="win-btn">Back</button><button class="win-btn">Forward</button><button class="win-btn">Refresh</button></div>
+        <div class="window-body">
+          <table class="file-table">
+            <thead><tr><th>Name</th><th>Type</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr class="project-row" data-name="Ruin Protocol" data-copy="Identity archive under pressure. Fragmented navigation, unstable memory index, elegant collapse states."><td>Ruin Protocol.exe</td><td>Interface archive</td><td>Damaged</td></tr>
+              <tr class="project-row" data-name="Velvet Static" data-copy="Luxury fashion microsite with chromatic drift, ambient motion fields, and dangerous softness."><td>Velvet Static.mov</td><td>Motion garment system</td><td>Recoverable</td></tr>
+              <tr class="project-row" data-name="Chapel of Signal Loss" data-copy="Ritual exhibition site structured like devotion under compression and subtitle failure."><td>Chapel of Signal Loss.dll</td><td>Narrative environment</td><td>Corrupted</td></tr>
+              <tr class="project-row" data-name="Red Shift / Soft Body" data-copy="Intimacy interface using proximity, refusal, pulse states, and delayed disclosure."><td>RedShift_SoftBody.sys</td><td>Experimental build</td><td>Unsafe</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="window" id="notesWindow" style="top: 170px; left: 120px; width: 480px;" data-title="Field Notes.txt">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Field Notes.txt - Notepad</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body notepad">
+          <p>Certain rooms arrive before I enter them.</p>
+          <p>Music does not accompany memory. It edits it.</p>
+          <p>Beauty is not safe. I trust it more than safety.</p>
+          <p>I do not build clean objects. I build convincing hauntings.</p>
+          <p>Glitch is not ornament. It is symptom, pressure, and language.</p>
+        </div>
+      </article>
+
+      <article class="window" id="mediaWindow" style="top: 210px; left: 610px; width: 360px;" data-title="Signal Player">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Signal Player</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body"><div class="player-box"><div class="player-screen"><p>NOW DECODING:</p><strong>signal_damage_01.wav</strong><div class="visualizer"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div><div class="player-controls"><button class="win-btn">Play</button><button class="win-btn">Stop</button><button class="win-btn">Loop</button></div></div></div>
+      </article>
+
+      <article class="window" id="galleryWindow" style="top: 260px; left: 680px; width: 340px;" data-title="Recovered Images">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Recovered Images</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body"><div class="image-grid"><div class="thumb">IMG_001.BMP</div><div class="thumb">SCAN_404.GIF</div><div class="thumb">PORTRAIT_ERR.JPG</div><div class="thumb">ROOM_13.TIF</div></div></div>
+      </article>
+
+      <article class="window" id="contactWindow" style="top: 82px; left: 760px; width: 360px;" data-title="Transmit Message">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Transmit Message</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body"><form class="win-form"><label>Name</label><input type="text" placeholder="Your name" /><label>Contact</label><input type="email" placeholder="email@domain.com" /><label>Project intent</label><input type="text" placeholder="What should it feel like?" /><label>Message</label><textarea placeholder="Timeline, references, budget, obsessions."></textarea><div class="form-actions"><button type="submit" class="win-btn">Send</button><button type="reset" class="win-btn">Reset</button></div></form></div>
+      </article>
+
+      <article class="window" id="trashWindow" style="top: 290px; left: 860px; width: 260px;" data-title="Recycle Bin">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Recycle Bin</div><div class="title-bar-controls"><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body"><ul class="trash-list"><li>certainty.tmp</li><li>clean_interface.bak</li><li>safety.dat</li><li>ordinary_language.exe</li></ul></div>
+      </article>
+    </section>
+
+    <div class="dialog error-dialog active" id="errorDialog">
+      <div class="title-bar"><div class="title-bar-text">System Error</div><div class="title-bar-controls"><button aria-label="Close" class="dialog-close"></button></div></div>
+      <div class="window-body dialog-body"><p class="dialog-message">This program has performed an illegal emotional operation and will be shut down.</p><div class="dialog-actions"><button class="win-btn" id="dialogOk">OK</button><button class="win-btn" id="dialogDetails">Details</button></div></div>
+    </div>
+
+    <nav class="taskbar">
+      <div class="start-wrap">
+        <button class="start-button" id="startButton">Start</button>
+        <div class="start-menu" id="startMenu"><div class="start-banner">NOCTIS VALE</div><div class="start-items"><button data-window="aboutWindow">System Properties</button><button data-window="worksWindow">Works Explorer</button><button data-window="notesWindow">Field Notes</button><button data-window="galleryWindow">Recovered Images</button><button data-window="contactWindow">Transmit Message</button></div></div>
+      </div>
+      <div class="task-buttons" id="taskButtons"></div>
+      <div class="tray"><span>ARCHIVE</span><span id="clock"></span></div>
+    </nav>
+  </main>
+
+  <template id="taskButtonTemplate"><button class="task-btn"></button></template>
+  <script src="script.js"></script>
+</body>
+</html>
