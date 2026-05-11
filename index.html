@@ -3,333 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ꜱɪɢɴᴀʟᵃʳᶜʰⁱᵛᵉᴅᴀᴍᴀɢᴇ</title>
-  <meta
-    name="description"
-    content="An immersive glitchcore portfolio site for Noctis Vale, sensory archivist and interface composer."
-  />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
-    rel="stylesheet"
-  />
+  <title>Noctis Vale OS — Corrupted Archive</title>
+  <meta name="description" content="A glitched Windows 98-inspired portfolio desktop for Noctis Vale." />
+  <meta name="theme-color" content="#008080" />
+  <meta name="color-scheme" content="light" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="noise"></div>
-  <div class="scanlines"></div>
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-ring" id="cursorRing"></div>
-
-  <header class="site-header">
-    <a href="#top" class="brand" aria-label="Noctis Vale home">
-      <img src="assets/logo-noctis-vale.svg" alt="Noctis Vale logo" class="brand-logo" />
-    </a>
-
-    <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navPanel">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span class="sr-only">Toggle menu</span>
-    </button>
-
-    <nav class="nav" id="navPanel">
-      <a href="#manifesto">Manifesto</a>
-      <a href="#works">Works</a>
-      <a href="#ledger">Ledger</a>
-      <a href="#signal">Signal</a>
-    </nav>
-  </header>
-
-  <main id="top">
-    <section class="hero section">
-      <div class="hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Archive / Signal / Interference</p>
-          <h1 class="hero-title">
-            <span class="glitch" data-text="Noctis">ꜱɪɢɴᴀʟ</span>
-            <span>ᴅᴀᴍᴀɢᴇ</span>
-          </h1>
-          <p class="hero-text">
-            I build places for feelings that refuse to survive in ordinary language.
-            Interactive environments, visual systems, and sensory interfaces for memory,
-            desire, distortion, and controlled ruin.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#works">Enter the archive</a>
-            <a class="button button-secondary" href="#signal">Send a signal</a>
-          </div>
-        </div>
-
-        <aside class="hero-panel reveal">
-          <div class="panel-label">Current system state</div>
-          <ul class="system-list">
-            <li><span>Role</span><strong>Sensory archivist / interface composer</strong></li>
-            <li><span>Mode</span><strong>Glitch opera / brutal elegance</strong></li>
-            <li><span>Methods</span><strong>Motion, type, sound, refusal</strong></li>
-            <li><span>Failure state</span><strong>Making it too honest</strong></li>
-          </ul>
-        </aside>
-      </div>
-
-      <div class="hero-orbit" aria-hidden="true">
-        <div class="orb orb-a"></div>
-        <div class="orb orb-b"></div>
-        <div class="orb orb-c"></div>
-      </div>
-
-      <div class="hero-footer reveal">
-        <div class="ticker">
-          <span>memory bleed</span>
-          <span>signal fracture</span>
-          <span>tender violence</span>
-          <span>color as evidence</span>
-          <span>music as architecture</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="manifesto" class="section section-tight">
-      <div class="section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">01 / Manifesto</p>
-          <h2>I translate interference.</h2>
-        </div>
-
-        <div class="manifesto-grid">
-          <article class="manifesto-card reveal">
-            <img src="assets/sigil-archive.svg" alt="" class="sigil" />
-            <p>
-              I do not make clean objects. I make convincing hauntings. My work begins
-              where ordinary presentation fails—when memory stutters, when color behaves
-              like evidence, when sound becomes structure, when love arrives damaged and
-              still insists on being seen.
-            </p>
-          </article>
-
-          <article class="manifesto-card manifesto-card-accent reveal">
-            <img src="assets/sigil-signal.svg" alt="" class="sigil" />
-            <p>
-              Glitch is not ornament. It is symptom, language, pressure, and pulse.
-              Every fracture is placed with intent. Every silence is part of the score.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="works" class="section">
-      <div class="section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">02 / Selected transmissions</p>
-          <h2>Built as emotional systems.</h2>
-          <p class="section-intro">
-            These are not static projects. They are environments that reward patience,
-            proximity, and a tolerance for instability.
-          </p>
-        </div>
-
-        <div class="projects-grid">
-          <article
-            class="project-card reveal"
-            data-title="Ruin Protocol"
-            data-type="Archive / Interface"
-            data-copy="An interactive identity archive built around split-state navigation, reactive text fragmentation, and memory-index transitions. Designed for exhibition contexts where selfhood appears unstable but never fully collapses."
-          >
-            <img src="assets/icon-eye.svg" alt="" class="project-icon" />
-            <p class="project-type">Archive / Interface</p>
-            <h3>Ruin Protocol</h3>
-            <p>
-              Identity storage under pressure. Distortion-driven navigation and elegant
-              collapse states.
-            </p>
-            <button class="text-link project-open">Open file</button>
-          </article>
-
-          <article
-            class="project-card reveal"
-            data-title="Velvet Static"
-            data-type="Fashion / Motion"
-            data-copy="A fashion-forward microsite where garments trigger ambient motion fields, chromatic drift, and responsive atmospheric overlays. Built to feel expensive, intimate, and mildly dangerous."
-          >
-            <img src="assets/icon-fragment.svg" alt="" class="project-icon" />
-            <p class="project-type">Fashion / Motion</p>
-            <h3>Velvet Static</h3>
-            <p>
-              Luxury glitch choreography for synthetic couture, body language, and shimmer
-              under stress.
-            </p>
-            <button class="text-link project-open">Open file</button>
-          </article>
-
-          <article
-            class="project-card reveal"
-            data-title="Chapel of Signal Loss"
-            data-type="Exhibition / Narrative"
-            data-copy="A ritualized exhibition site built from liturgical pacing, corrupted loops, layered subtitles, and spatial transitions that mimic devotion under compression. The viewer never fully stands outside the work."
-          >
-            <img src="assets/icon-audio.svg" alt="" class="project-icon" />
-            <p class="project-type">Exhibition / Narrative</p>
-            <h3>Chapel of Signal Loss</h3>
-            <p>
-              Where devotion flickers, subtitles fail, and reverence learns to distort.
-            </p>
-            <button class="text-link project-open">Open file</button>
-          </article>
-
-          <article
-            class="project-card reveal"
-            data-title="Red Shift / Soft Body"
-            data-type="Intimacy / Experiment"
-            data-copy="A relationship-driven installation site using pulse states, cursor proximity, refusal interactions, and delayed revelation. It is built for the space between wanting contact and surviving it."
-          >
-            <img src="assets/icon-fragment.svg" alt="" class="project-icon" />
-            <p class="project-type">Intimacy / Experiment</p>
-            <h3>Red Shift / Soft Body</h3>
-            <p>
-              For the moment where tenderness and danger become indistinguishable.
-            </p>
-            <button class="text-link project-open">Open file</button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-split">
-      <div class="section-shell split-grid">
-        <div class="split-left reveal">
-          <p class="eyebrow">03 / Method</p>
-          <h2>Sensory engineering.</h2>
-          <p class="section-intro">
-            My process begins with atmosphere before layout, pulse before hierarchy, and
-            emotional weather before interface rules.
-          </p>
-          <img src="assets/sigil-rupture.svg" alt="" class="sigil sigil-large" />
-        </div>
-
-        <div class="split-right reveal">
-          <div class="stack-card">
-            <div class="stack-item">
-              <span>01</span>
-              <p>Map the emotion before the feature.</p>
-            </div>
-            <div class="stack-item">
-              <span>02</span>
-              <p>Design typography as voice, not decoration.</p>
-            </div>
-            <div class="stack-item">
-              <span>03</span>
-              <p>Use motion to destabilize, reveal, or withhold.</p>
-            </div>
-            <div class="stack-item">
-              <span>04</span>
-              <p>Make atmosphere carry as much meaning as text.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="ledger" class="section">
-      <div class="section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">04 / Field notes</p>
-          <h2>Ledger from the body.</h2>
-          <p class="section-intro">
-            Working notes, technical fragments, and warnings I keep because forgetting is
-            expensive.
-          </p>
-        </div>
-
-        <div class="ledger-grid">
-          <article class="ledger-entry reveal">
-            <span class="ledger-index">01</span>
-            <p>Certain rooms arrive before I enter them.</p>
-          </article>
-          <article class="ledger-entry reveal">
-            <span class="ledger-index">02</span>
-            <p>White noise is only honest when it almost hurts.</p>
-          </article>
-          <article class="ledger-entry reveal">
-            <span class="ledger-index">03</span>
-            <p>Music does not accompany memory. It edits it.</p>
-          </article>
-          <article class="ledger-entry reveal">
-            <span class="ledger-index">04</span>
-            <p>Some people distort the air around them and call it charisma.</p>
-          </article>
-          <article class="ledger-entry reveal">
-            <span class="ledger-index">05</span>
-            <p>There are colors that only appear when someone is about to leave.</p>
-          </article>
-          <article class="ledger-entry reveal">
-            <span class="ledger-index">06</span>
-            <p>Beauty is not safe. I trust it more than I trust safety.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="signal" class="section section-tight">
-      <div class="section-shell">
-        <div class="contact-grid">
-          <div class="contact-copy reveal">
-            <p class="eyebrow">05 / Signal</p>
-            <h2>Tell me what you need them to feel.</h2>
-            <p class="section-intro">
-              For commissions, exhibitions, sonic visual systems, digital fashion, and
-              websites that should behave like art instead of advertising.
-            </p>
-          </div>
-
-          <form class="contact-form reveal">
-            <label>
-              <span>Name</span>
-              <input type="text" name="name" placeholder="Your name" />
-            </label>
-
-            <label>
-              <span>Contact</span>
-              <input type="email" name="email" placeholder="email@domain.com" />
-            </label>
-
-            <label>
-              <span>Project intent</span>
-              <input
-                type="text"
-                name="intent"
-                placeholder="What are you trying to make them feel?"
-              />
-            </label>
-
-            <label>
-              <span>Scope</span>
-              <textarea
-                name="message"
-                placeholder="Timeline, budget, references, obsessions, constraints."
-              ></textarea>
-            </label>
-
-            <button type="submit" class="button button-primary">Transmit</button>
-            <p class="form-note">Clarity helps. So does nerve.</p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div class="modal" id="modal" aria-hidden="true">
-    <div class="modal-backdrop" data-close="true"></div>
-    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" id="modalClose" aria-label="Close project modal">×</button>
-      <p class="modal-type" id="modalType"></p>
-      <h3 id="modalTitle"></h3>
-      <p id="modalCopy"></p>
+  <div class="boot-screen" id="bootScreen" aria-hidden="true">
+    <div class="boot-panel">
+      <img src="assets/boot-logo.svg" alt="" class="boot-logo" />
+      <p>Noctis Vale OS is checking the archive for errors...</p>
+      <div class="boot-bar"><span id="bootBar"></span></div>
+      <p class="boot-sub">Warning: unrecoverable memory bleed detected.</p>
+      <button class="win-btn" id="enterDesktop">Enter desktop</button>
     </div>
   </div>
 
+  <div class="crt-overlay"></div>
+  <div class="scanline"></div>
+  <div class="glitch-flash" id="glitchFlash"></div>
+
+  <main class="desktop" id="desktop">
+    <aside class="desktop-icons">
+      <button class="desktop-icon" data-window="aboutWindow"><img src="assets/icon-computer.svg" alt="" /><span>My Computer</span></button>
+      <button class="desktop-icon" data-window="worksWindow"><img src="assets/icon-folder.svg" alt="" /><span>Works</span></button>
+      <button class="desktop-icon" data-window="notesWindow"><img src="assets/icon-notes.svg" alt="" /><span>Field Notes.txt</span></button>
+      <button class="desktop-icon" data-window="mediaWindow"><img src="assets/icon-audio.svg" alt="" /><span>Signal Player</span></button>
+      <button class="desktop-icon" data-window="galleryWindow"><img src="assets/icon-image.svg" alt="" /><span>Recovered Images</span></button>
+      <button class="desktop-icon" data-window="contactWindow"><img src="assets/icon-mail.svg" alt="" /><span>Transmit</span></button>
+      <button class="desktop-icon" data-window="trashWindow"><img src="assets/icon-trash.svg" alt="" /><span>Recycle Bin</span></button>
+    </aside>
+
+    <section class="windows-layer">
+      <article class="window active" id="aboutWindow" style="top: 56px; left: 180px; width: 540px;" data-title="System Properties">
+        <div class="title-bar drag-handle"><div class="title-bar-text">System Properties</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body">
+          <div class="system-header"><h1>Noctis Vale OS</h1><p>Archive build: 98.ERR / Signal damage edition</p></div>
+          <div class="inset-panel">
+            <p><strong>User:</strong> Noctis Vale</p>
+            <p><strong>Role:</strong> Sensory archivist / interface composer</p>
+            <p><strong>Status:</strong> Stable under distortion only</p>
+            <p><strong>Machine condition:</strong> Corrupted, operational, emotionally loaded</p>
+          </div>
+          <div class="status-grid">
+            <div class="bevel-card"><h2>Profile</h2><p>I build digital environments that feel like memory failure, emotional weather, and beauty under pressure.</p></div>
+            <div class="bevel-card"><h2>Methods</h2><p>UI systems, motion, typography, sound logic, atmosphere design, and intentional glitch.</p></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="window" id="worksWindow" style="top: 112px; left: 420px; width: 520px;" data-title="Works Explorer">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Works Explorer</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-toolbar"><button class="win-btn">Back</button><button class="win-btn">Forward</button><button class="win-btn">Refresh</button></div>
+        <div class="window-body">
+          <table class="file-table">
+            <thead><tr><th>Name</th><th>Type</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr class="project-row" data-name="Ruin Protocol" data-copy="Identity archive under pressure. Fragmented navigation, unstable memory index, elegant collapse states."><td>Ruin Protocol.exe</td><td>Interface archive</td><td>Damaged</td></tr>
+              <tr class="project-row" data-name="Velvet Static" data-copy="Luxury fashion microsite with chromatic drift, ambient motion fields, and dangerous softness."><td>Velvet Static.mov</td><td>Motion garment system</td><td>Recoverable</td></tr>
+              <tr class="project-row" data-name="Chapel of Signal Loss" data-copy="Ritual exhibition site structured like devotion under compression and subtitle failure."><td>Chapel of Signal Loss.dll</td><td>Narrative environment</td><td>Corrupted</td></tr>
+              <tr class="project-row" data-name="Red Shift / Soft Body" data-copy="Intimacy interface using proximity, refusal, pulse states, and delayed disclosure."><td>RedShift_SoftBody.sys</td><td>Experimental build</td><td>Unsafe</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="window" id="notesWindow" style="top: 170px; left: 120px; width: 480px;" data-title="Field Notes.txt">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Field Notes.txt - Notepad</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body notepad">
+          <p>Certain rooms arrive before I enter them.</p>
+          <p>Music does not accompany memory. It edits it.</p>
+          <p>Beauty is not safe. I trust it more than safety.</p>
+          <p>I do not build clean objects. I build convincing hauntings.</p>
+          <p>Glitch is not ornament. It is symptom, pressure, and language.</p>
+        </div>
+      </article>
+
+      <article class="window" id="mediaWindow" style="top: 210px; left: 610px; width: 360px;" data-title="Signal Player">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Signal Player</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body"><div class="player-box"><div class="player-screen"><p>NOW DECODING:</p><strong>signal_damage_01.wav</strong><div class="visualizer"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div></div><div class="player-controls"><button class="win-btn">Play</button><button class="win-btn">Stop</button><button class="win-btn">Loop</button></div></div></div>
+      </article>
+
+      <article class="window" id="galleryWindow" style="top: 260px; left: 680px; width: 340px;" data-title="Recovered Images">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Recovered Images</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body"><div class="image-grid"><div class="thumb">IMG_001.BMP</div><div class="thumb">SCAN_404.GIF</div><div class="thumb">PORTRAIT_ERR.JPG</div><div class="thumb">ROOM_13.TIF</div></div></div>
+      </article>
+
+      <article class="window" id="contactWindow" style="top: 82px; left: 760px; width: 360px;" data-title="Transmit Message">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Transmit Message</div><div class="title-bar-controls"><button aria-label="Minimize" class="minimize-btn"></button><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body"><form class="win-form"><label>Name</label><input type="text" placeholder="Your name" /><label>Contact</label><input type="email" placeholder="email@domain.com" /><label>Project intent</label><input type="text" placeholder="What should it feel like?" /><label>Message</label><textarea placeholder="Timeline, references, budget, obsessions."></textarea><div class="form-actions"><button type="submit" class="win-btn">Send</button><button type="reset" class="win-btn">Reset</button></div></form></div>
+      </article>
+
+      <article class="window" id="trashWindow" style="top: 290px; left: 860px; width: 260px;" data-title="Recycle Bin">
+        <div class="title-bar drag-handle"><div class="title-bar-text">Recycle Bin</div><div class="title-bar-controls"><button aria-label="Maximize" class="maximize-btn"></button><button aria-label="Close" class="close-btn"></button></div></div>
+        <div class="window-body"><ul class="trash-list"><li>certainty.tmp</li><li>clean_interface.bak</li><li>safety.dat</li><li>ordinary_language.exe</li></ul></div>
+      </article>
+    </section>
+
+    <div class="dialog error-dialog active" id="errorDialog">
+      <div class="title-bar"><div class="title-bar-text">System Error</div><div class="title-bar-controls"><button aria-label="Close" class="dialog-close"></button></div></div>
+      <div class="window-body dialog-body"><p class="dialog-message">This program has performed an illegal emotional operation and will be shut down.</p><div class="dialog-actions"><button class="win-btn" id="dialogOk">OK</button><button class="win-btn" id="dialogDetails">Details</button></div></div>
+    </div>
+
+    <nav class="taskbar">
+      <div class="start-wrap">
+        <button class="start-button" id="startButton">Start</button>
+        <div class="start-menu" id="startMenu"><div class="start-banner">NOCTIS VALE</div><div class="start-items"><button data-window="aboutWindow">System Properties</button><button data-window="worksWindow">Works Explorer</button><button data-window="notesWindow">Field Notes</button><button data-window="galleryWindow">Recovered Images</button><button data-window="contactWindow">Transmit Message</button></div></div>
+      </div>
+      <div class="task-buttons" id="taskButtons"></div>
+      <div class="tray"><span>ARCHIVE</span><span id="clock"></span></div>
+    </nav>
+  </main>
+
+  <template id="taskButtonTemplate"><button class="task-btn"></button></template>
   <script src="script.js"></script>
 </body>
 </html>
