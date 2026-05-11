@@ -1,3 +1,3 @@
-# Noctis Vale OS — Corrupted Windows 98 Portfolio
+# signal damage v3
 
-Open index.html in a browser or serve the folder with a static server.
+Includes corrupted boot-device selection, three corrupted screensavers, and multiplying draggable dialogs.
